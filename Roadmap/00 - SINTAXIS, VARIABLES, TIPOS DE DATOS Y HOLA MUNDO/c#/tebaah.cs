@@ -1,47 +1,33 @@
-﻿  // See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
-  /*
-  * EJERCICIO:
-  * - Crea un comentario en el código y coloca la URL del sitio web oficial del
-  *   lenguaje de programación que has seleccionado.
-  * - Representa las diferentes sintaxis que existen de crear comentarios
-  *   en el lenguaje (en una línea, varias...).
-  * - Crea una variable (y una constante si el lenguaje lo soporta).
-  * - Crea variables representando todos los tipos de datos primitivos
-  *   del lenguaje (cadenas de texto, enteros, booleanos...).
-  * - Imprime por terminal el texto: "¡Hola, [y el nombre de tu lenguaje]!"
-  */
+// https://learn.microsoft.com/es-es/dotnet/csharp/
 
-  // tipos de comentarios
+// Comentario de linea
 
-  // este es un comentario de una linea url del sitio es https://dotnet.microsoft.com/es-es/languages/csharp
-  /* este es un comentario
-  de varias lineas */
+/*
+Comentario
+de varias lineas
+*/
 
-  // variables
+// variable y constante
+int variable = 0;
+const float constante = 1.0f;
 
-  public string variable = "hola";
-  public const string constante = "hola";
-  public char caracter = 'a';
-  public var variable = "hola";
-  public string[] arreglo = {"hola", "mundo"};
-  public List<string> lista = new List<string> {"hola", "mundo"};
-  public Dictionary<string, string> diccionario = new Dictionary<string, string> {{"hola", "mundo"}};
+// datos primitivos
 
+byte datoByte;
+short datoShort;
+int datoInt;
+long datoLong;
 
-  // tipos de datos primitivos
+float datoFloat;
+double  datoDouble;
 
-  public byte b = 1;
-  public short corto = 1;
-  public int entero = 1;
-  public float flotante = 1.1f;
-  public double doble = 1.1;
-  public bool booleano = true;
+decimal datoDecimal;
 
+bool datoBool;
 
+char datoChar;
+string datoString;
 
-
-  // impresion por terminal
-  public string lenguaje = "C#";
-
-  Console.WriteLine($"Hello, {lenguaje}");
+Console.WriteLine("Hola, C#");
