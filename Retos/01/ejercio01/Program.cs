@@ -28,6 +28,21 @@ var menorOigual = 45 <= 34;
 
 // operador logicos
 
+var and = false & false;
+var or = true || true;
+var not = !true;
 
+// operador incremento decremento
 
+var incremento = 0;
+Console.WriteLine(incremento++);
+Console.WriteLine(incremento++);
 
+var decremento = 5; 
+Console.WriteLine(decremento--);
+Console.WriteLine(decremento--);
+
+// operadores especiales 
+
+string valorFinal = 5 > 4 ? "verdadero" : "falso";
+Console.WriteLine(valorFinal);
