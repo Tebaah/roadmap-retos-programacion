@@ -8,6 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00", "00", "{74C84ECC-63FC-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tebaah", "Retos\00\tebaah\tebaah.csproj", "{90865369-5AF6-6382-7E7F-C836EB192AE9}"
 EndProject
+<<<<<<< HEAD
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{1D0D1781-8E94-8C71-665A-E6C5882D0BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercio01", "Retos\01\ejercio01\ejercio01.csproj", "{5BE0504E-1494-6316-B75A-37ECAD9A578A}"
+EndProject
+>>>>>>> realese
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +25,13 @@ Global
 		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> realese
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -25,8 +39,16 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{74C84ECC-63FC-75A1-23DB-D1CC0BF5F9B7} = {8C36FC64-A8EE-E995-7237-79F166906392}
 		{90865369-5AF6-6382-7E7F-C836EB192AE9} = {74C84ECC-63FC-75A1-23DB-D1CC0BF5F9B7}
+<<<<<<< HEAD
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2386C63A-1FAE-4EFF-A6AF-C63951D7E746}
+=======
+		{1D0D1781-8E94-8C71-665A-E6C5882D0BA8} = {8C36FC64-A8EE-E995-7237-79F166906392}
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A} = {1D0D1781-8E94-8C71-665A-E6C5882D0BA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2675BF3-5A4E-4819-8BDB-DEA31BA6B209}
+>>>>>>> realese
 	EndGlobalSection
 EndGlobal
