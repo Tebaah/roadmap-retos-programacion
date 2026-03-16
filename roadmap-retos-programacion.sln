@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Retos", "Retos", "{8C36FC64-A8EE-E995-7237-79F166906392}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00", "00", "{74C84ECC-63FC-75A1-23DB-D1CC0BF5F9B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tebaah", "Retos\00\tebaah\tebaah.csproj", "{90865369-5AF6-6382-7E7F-C836EB192AE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{1D0D1781-8E94-8C71-665A-E6C5882D0BA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ejercio01", "Retos\01\ejercio01\ejercio01.csproj", "{5BE0504E-1494-6316-B75A-37ECAD9A578A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90865369-5AF6-6382-7E7F-C836EB192AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74C84ECC-63FC-75A1-23DB-D1CC0BF5F9B7} = {8C36FC64-A8EE-E995-7237-79F166906392}
+		{90865369-5AF6-6382-7E7F-C836EB192AE9} = {74C84ECC-63FC-75A1-23DB-D1CC0BF5F9B7}
+		{1D0D1781-8E94-8C71-665A-E6C5882D0BA8} = {8C36FC64-A8EE-E995-7237-79F166906392}
+		{5BE0504E-1494-6316-B75A-37ECAD9A578A} = {1D0D1781-8E94-8C71-665A-E6C5882D0BA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2675BF3-5A4E-4819-8BDB-DEA31BA6B209}
+	EndGlobalSection
+EndGlobal
