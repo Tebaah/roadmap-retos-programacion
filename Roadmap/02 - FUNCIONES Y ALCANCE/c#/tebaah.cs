@@ -1,118 +1,165 @@
-﻿internal class Program
+﻿// Reto 02 - Ejercicio 02: Funciones Básicas
+// Ejemplos de diferentes tipos de funciones en C#
+
+// ============================================
+// 1. FUNCIÓN SIN PARÁMETROS NI RETORNO
+// ============================================
+void SaludarBasico()
 {
-    /*
-    * EJERCICIO:
-    * - Crea ejemplos de funciones básicas que representen las diferentes
-    *   posibilidades del lenguaje:
-    *   Sin parámetros ni retorno, con uno o varios parámetros, con retorno...
-    * - Comprueba si puedes crear funciones dentro de funciones.
-    * - Utiliza algún ejemplo de funciones ya creadas en el lenguaje.
-    * - Pon a prueba el concepto de variable LOCAL y GLOBAL.
-    * - Debes hacer print por consola del resultado de todos los ejemplos.
-    *   (y tener en cuenta que cada lenguaje puede poseer más o menos posibilidades)
-    *
-    * DIFICULTAD EXTRA (opcional):
-    * Crea una función que reciba dos parámetros de tipo cadena de texto y retorne un número.
-    * - La función imprime todos los números del 1 al 100. Teniendo en cuenta que:
-    *   - Si el número es múltiplo de 3, muestra la cadena de texto del primer parámetro.
-    *   - Si el número es múltiplo de 5, muestra la cadena de texto del segundo parámetro.
-    *   - Si el número es múltiplo de 3 y de 5, muestra las dos cadenas de texto concatenadas.
-    *   - La función retorna el número de veces que se ha impreso el número en lugar de los textos.
-    *
-    * Presta especial atención a la sintaxis que debes utilizar en cada uno de los casos.
-    * Cada lenguaje sigue una convenciones que debes de respetar para que el código se entienda.
-    */
-    private static void Main(string[] args)
+    Console.WriteLine("¡Hola! Soy una función sin parámetros ni retorno.");
+}
+
+// ============================================
+// 2. FUNCIÓN CON PARÁMETRO(S) SIN RETORNO
+// ============================================
+void SaludarConNombre(string nombre)
+{
+    Console.WriteLine($"¡Hola, {nombre}! Esta función tiene un parámetro.");
+}
+
+void MostrarInfo(string nombre, int edad, string ciudad)
+{
+    Console.WriteLine($"Información personal:");
+    Console.WriteLine($"  Nombre: {nombre}");
+    Console.WriteLine($"  Edad: {edad} años");
+    Console.WriteLine($"  Ciudad: {ciudad}");
+}
+
+// ============================================
+// 3. FUNCIÓN SIN PARÁMETROS CON RETORNO
+// ============================================
+int ObtenerNumeroAleatorio()
+{
+    Random random = new Random();
+    return random.Next(1, 101); // Retorna un número entre 1 y 100
+}
+
+string ObtenerMensajeDeBienvenida()
+{
+    return "Bienvenido Al Programa de Funciones en C#";
+}
+
+// ============================================
+// 4. FUNCIÓN CON PARÁMETRO(S) Y RETORNO
+// ============================================
+int Sumar(int a, int b)
+{
+    return a + b;
+}
+
+double CalcularPromedio(double nota1, double nota2, double nota3)
+{
+    return (nota1 + nota2 + nota3) / 3;
+}
+
+string Concatenar(string texto1, string texto2)
+{
+    return $"{texto1} {texto2}";
+}
+
+// ============================================
+// 5. FUNCIÓN CON PARÁMETROS OPCIONALES
+// ============================================
+void Desped(string nombre, string despedida = "Hasta luego")
+{
+    Console.WriteLine($"{despedida}, {nombre}!");
+}
+
+// ============================================
+// 6. FUNCIÓN CON RETORNO DE BOOLEANO
+// ============================================
+bool EsMayorDeEdad(int edad)
+{
+    return edad >= 18;
+}
+
+bool ContienePalabra(string texto, string palabra)
+{
+    return texto.Contains(palabra);
+}
+
+// ============================================
+// 7. FUNCIÓN CON PARÁMETROS NOMBRADOS
+// ============================================
+void CrearProducto(string nombre, decimal precio, int cantidad)
+{
+    Console.WriteLine($"Producto: {nombre}");
+    Console.WriteLine($"Precio: ${precio}");
+    Console.WriteLine($"Cantidad: {cantidad} unidades");
+}
+
+// ============================================
+// LLAMADAS A LAS FUNCIONES
+// ============================================
+
+Console.WriteLine("=== EJEMPLOS DE FUNCIONES EN C# ===\n");
+
+// Función sin parámetros ni retorno
+Console.WriteLine("--- 1. Sin parámetros ni retorno ---");
+SaludarBasico();
+
+// Función con parámetro(s) sin retorno
+Console.WriteLine("\n--- 2. Con parámetros, sin retorno ---");
+SaludarConNombre("Carlos");
+MostrarInfo("María", 25, "Madrid");
+
+// Función sin parámetros con retorno
+Console.WriteLine("\n--- 3. Sin parámetros, con retorno ---");
+string saludo = ObtenerMensajeDeBienvenida();
+Console.WriteLine(saludo);
+int numAleatorio = ObtenerNumeroAleatorio();
+Console.WriteLine($"Número aleatorio: {numAleatorio}");
+
+// Función con parámetro(s) y retorno
+Console.WriteLine("\n--- 4. Con parámetros y retorno ---");
+int resultado = Sumar(15, 25);
+Console.WriteLine($"15 + 25 = {resultado}");
+
+double promedio = CalcularPromedio(8.5, 9.0, 7.5);
+Console.WriteLine($"Promedio de calificaciones: {promedio:F2}");
+
+string mensaje = Concatenar("Hola", "Mundo");
+Console.WriteLine($"Concatenación: {mensaje}");
+
+// Función con parámetros opcionales
+Console.WriteLine("\n--- 5. Con parámetros opcionales ---");
+Desped("Juan");
+Desped("Pedro", "¡Hasta pronto");
+
+// Función con retorno booleano
+Console.WriteLine("\n--- 6. Con retorno booleano ---");
+bool esAdulto = EsMayorDeEdad(20);
+Console.WriteLine($"¿Es mayor de edad? {esAdulto}");
+
+bool encuentra = ContienePalabra("El programador crea código", "código");
+Console.WriteLine($"¿Contiene la palabra 'código'? {encuentra}");
+
+// Función con parámetros nombrados
+Console.WriteLine("\n--- 7. Con parámetros nombrados ---");
+CrearProducto(nombre: "Laptop", precio: 999.99m, cantidad: 5);
+
+
+void BizzBuzz(int numero)
+{
+    for (int i = 1; i <= numero; i++)
     {
-        // Ejemplo de función sin parámetros ni retorno
-        void Saludar()
+        if (i % 3 == 0 && i % 5 == 0)
         {
-            Console.WriteLine("¡Hola!");
+            Console.WriteLine("BizzBuzz");
         }
-
-        Saludar();
-
-        // Ejemplo de función con un parámetro y retorno
-        int Sumar(int a, int b)
+        else if (i % 3 == 0)
         {
-            return a + b;
+            Console.WriteLine("Bizz");
         }
-
-        Console.WriteLine(Sumar(2, 3));
-
-        // Ejemplo de función con varios parámetros y retorno
-        int Multiplicar(int a, int b, int c)
+        else if (i % 5 == 0)
         {
-            return a * b * c;
+            Console.WriteLine("Buzz");
         }
-
-        Console.WriteLine(Multiplicar(2, 3, 4));
-
-        // Ejemplo de función con retorno
-        int ObtenerNumero()
+        else
         {
-            return 42;
+            Console.WriteLine(i);
         }
-
-        Console.WriteLine(ObtenerNumero());
-
-        // Ejemplo de función con parámetros
-        void SaludarA(string nombre)
-        {
-            Console.WriteLine($"¡Hola, {nombre}!");
-        }
-
-        SaludarA("Mundo");
-
-        // Ejemplo de función con parámetros y retorno
-        string SaludarAConRetorno(string nombre)
-        {
-            return $"¡Hola, {nombre}!";
-        }
-
-        Console.WriteLine(SaludarAConRetorno("Mundo"));
-
-        // Ejemplo de función dentro de otra función
-        void FuncionExterna()
-        {
-            Console.WriteLine("Función externa");
-
-            void FuncionInterna()
-            {
-                Console.WriteLine("Función interna");
-            }
-
-            FuncionInterna();
-        }
-
-        FuncionExterna();
-
-
-        int ImprimirNumeros(string texto1, string texto2)
-        {
-            int contador = 0;
-            for (int i = 1; i <= 100; i++)
-            {
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine(texto1 + texto2);
-                    contador++;
-                }
-                else if (i % 3 == 0)
-                {
-                    Console.WriteLine(texto1);
-                    contador++;
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine(texto2);
-                    contador++;
-                }
-            }
-            return contador;
-        }
-
-        int vecesImpreso = ImprimirNumeros("Fizz", "Buzz");
-        Console.WriteLine($"La función ImprimirNumeros se ha ejecutado {vecesImpreso} veces.");
     }
 }
+
+BizzBuzz(100); // BizzBuzz
